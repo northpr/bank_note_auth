@@ -30,4 +30,5 @@ async def predict_file(file:UploadFile=File(...)):
     return {"prediction": str(prediction)}
 
 if __name__ == "__main__":
+    # you can run by using uvicorn app:app --reload or python app.py
     uvicorn.run(app, host="0.0.0.0", port=8000)
