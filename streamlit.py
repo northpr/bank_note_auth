@@ -23,10 +23,10 @@ def main():
                 <h2 style="color:white;text-align:center;">Streamlit Bank Note Authenticator ML App </h2>
                 </div>"""
     st.markdown(html_temp, unsafe_allow_html=True)
-    variance = st.text_input("Variance", "Variance")
-    skewness = st.text_input("skewness", "skewness")
-    curtosis = st.text_input("curtosis", "curtosis")
-    entropy = st.text_input("entropy", "entropy")
+    variance = st.text_input("Variance", placeholder="variance")
+    skewness = st.text_input("Skewness", placeholder="skewness")
+    curtosis = st.text_input("Curtosis", placeholder="curtosis")
+    entropy = st.text_input("Entropy", placeholder="entropy")
     result = ""
     if st.button("Predict"):
         result = predict_note_authentication(variance, skewness, curtosis, entropy)
