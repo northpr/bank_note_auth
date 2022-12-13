@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 app = FastAPI()
-MODEL_PATH = "model/rfc.pkl"
+MODEL_PATH = "rfc.pkl"
 
 # Load model that we have trained
 with open(MODEL_PATH, "rb") as file:
